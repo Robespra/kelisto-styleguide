@@ -1,0 +1,71 @@
+
+
+#masthead {
+  min-height:172px;
+  background-color:#864587;
+    color:#ffffff;
+}
+
+#masthead h1 {
+  font-size: 55px;
+  font-family:'Raleway' sans-serif;
+  line-height: 1;
+}
+
+#masthead .well {
+  margin-top:13%;
+  background-color:#111155;
+    border-color:#000033;
+}
+
+.icon-bar {
+  background-color:#fff;
+}
+.nav-stacked{
+  margin-top:5%;
+  background:#f1f1f1;
+  position:fixed;
+  border-radius:.4em;
+}
+
+@media screen and (min-width: 768px) {
+  #masthead h1 {
+    font-size: 80px;
+  }
+}
+
+.navbar-bright {
+  background-color:#111155;
+    color:#fff;
+}
+  
+.navbar-bright a, #masthead a, #masthead .lead {
+    color:#fff;
+}
+
+.navbar-bright li > a:hover {
+    background-color:#000033;
+}
+
+.affix-top,.affix{
+  position: static;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    margin-top:30px;
+    width:228px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+
+#sidebar li.active {
+    border:0 #eee solid;
+    border-right-width:4px;
+}
