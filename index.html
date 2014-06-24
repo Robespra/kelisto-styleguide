@@ -6,15 +6,30 @@
     <title>Kelisto Styleguide</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/icon_fonts.css" />
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
   </head>
   <body>
-    
-
+  
 <div id="masthead">  
   <div class="container">
       <div class="row">
@@ -30,7 +45,7 @@
         <div class="col-md-3" id="leftCol">
               
                 <ul class="nav nav-stacked" id="sidebar">
-                  <li><a href="#sec0">Introduction</a></li>
+                  <li><a href="#sec0" class="current">Introduction</a></li>
                   <li><a href="#sec1">Logo</a></li>
                   <li><a href="#sec2">Colors</a></li>
                   <li><a href="#sec3">Typography</a></li>
@@ -123,6 +138,9 @@
                 Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
               
               <h2 id="sec5">Icons</h2>
+              <i class="icon-megaphone"></span>
+              <span class="icon-megaphone"></span>
+              <span class="icon-megaphone"></span>
               <h2 id="sec6">Buttons</h2>
               <h2 id="sec7">Forms</h2>
               <h2 id="sec8">Mediaqueries</h2>
@@ -132,10 +150,17 @@
                 
                 
           </div> 
+
     </div>
+
 </div>
 
-
+<script>
+$('#sidebar li a').on('click', function(){
+$('li a.current').removeClass('current');
+$(this).addClass('current');
+});
+</script>
 
   </body>
 </html>

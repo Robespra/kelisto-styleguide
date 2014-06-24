@@ -1,5 +1,3 @@
-
-
 #masthead {
   min-height:172px;
   background-color:#864587;
@@ -27,6 +25,7 @@
   position:fixed;
   border-radius:.4em;
 }
+
 @media screen and (max-width: 990px) {
   .nav-stacked{
     position:relative;
@@ -48,7 +47,26 @@
 }
 
 .navbar-bright li > a:hover {
-    background-color:#000033;
+    background-color:#009de0;
+}
+.nav>li>a {
+position: relative;
+display: block;
+padding: 10px 15px;
+font-size: 1.3em;
+}
+.nav-stacked>li+li{
+  margin-top:0;
+}
+.nav>li>a:hover{
+  background:#fff;
+}
+.current{
+  color:#009de0;
+  background:#fff;
+}
+a.current:hover{
+  background:#fff;
 }
 
 .affix-top,.affix{
@@ -69,7 +87,3 @@
   }
 }
 
-#sidebar li.active {
-    border:0 #eee solid;
-    border-right-width:4px;
-}
