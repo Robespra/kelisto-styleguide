@@ -1,3 +1,7 @@
+body {
+  font-family:'Open Sans';
+}
+
 @font-face {
   font-family: 'general';
   src:url('fonts/general.eot?uy5qrt');
@@ -327,7 +331,7 @@
   background:#f1f1f1;
   position:fixed;
   border-radius:.4em;
-  border:1px solid #864587;
+  border:1px solid #ddd;
 }
 
 @media screen and (max-width: 990px) {
@@ -366,10 +370,11 @@ font-size: 1.3em;
   background:#fff;
 }
 .current{
-  color:#009de0;
+  color:#2a2a2a;
   background:#fff;
 }
 a.current:hover{
+  color:#2a2a2a;
   background:#fff;
 }
 
@@ -392,10 +397,8 @@ a.current:hover{
 }
 .glyph {
   font-size: 16px;
-  width: 15em;
+  width: 12em;
   padding-bottom: 1em;
-  margin-right: 4em;
-  margin-bottom: 1em;
   float: left;
   overflow: hidden;
 }
@@ -495,6 +498,6 @@ p {
   font-size: 16px;
 }
 .fs1 {
-  font-size: 32px;
+  font-size: 29px;
 }
 
