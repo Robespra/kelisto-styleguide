@@ -192,7 +192,7 @@ Usability & User Experience Community</a>
                 
               <div class="col-md-6">
                   <div class="panel panel-default">
-                  <div class="panel-heading"><h5>Background SVG grey patterns</h5></div>
+                  <div class="panel-heading"><h5 id="#whitebg">Background SVG grey patterns</h5></div>
                   <div class="panel-body"><img src="img/grey_patterns_demo.jpg" class="img-responsive img-thumbnail img-center">
                     <div class="row">
                       <div class="col-md-2">
@@ -557,7 +557,7 @@ Dominant
                             Details : corporate purple, blue as a trust/highlight secondary color, green for call-to-action buttons, specs text contrasts : yellow on blue/purple.
                           </p>
                          <p>
-                            Combined with <a href="#sec6">SVG white pattern</a> background on most pages
+                            Combined with <a href="whitebg">SVG white pattern</a> background on most pages
                           </p>
                         </div>
                       </div>
@@ -649,7 +649,7 @@ Specific campaign dominant
                             $background-color
                           </p>
                           <p>
-                            Combined with <a href="#sec6">SVG white pattern</a> background on most pages
+                            Combined with <a href="img/bg-homepage.svg">SVG patterns</a> background on most pages
                           </p>
                         </div>
                       </div>
@@ -770,6 +770,8 @@ Specific campaign dominant
                 font-weight:400;
               </code></pre>
               <a href="http://www.fontsquirrel.com/fonts/open-sans?q%5Bterm%5D=Open+sans&q%5Bsearch_check%5D=Y" target="_blank">Download Open Sans font</a>
+              </br>
+              Style : Regular
               </br></br>
             <h4>Aditional font</h4>
             <img src="img/tagline-only.jpg" class="img-responsive" width="40%;">
@@ -828,10 +830,10 @@ Specific campaign dominant
       Megaphone Icon
     </h5>
 
-    <pre><code>&lt;h5&gt;
-  &lt;span class=&quot;icon-megaphone&quot;&lt;/span&gt;
+    <pre><code>%h5
+  %span.icon-megaphone
   Megaphone Icon
-&lt;/h5&gt;</code></pre>
+</code></pre>
 
     <style>[data-icon]:before {
   font-family: icons; /* BYO icon font, mapped smartly */
@@ -842,12 +844,12 @@ Specific campaign dominant
     <h4>How To Use for Stand Alone Icons</h4>
     <span class="icon-megaphone"></span>
      
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon-megaphone&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+<div class="highlight"><pre><code class="html"><span class="nt">%i.icon-megaphone</span>
 </code></pre></div>
  <p>
         You can place icons just about anywhere using the CSS Prefix <code>icon-</code> and the icon's
-        name. Font Icons are designed to be used with inline elements (we like the <code>&lt;i&gt;</code> tag for
-        brevity, but using a <code>&lt;span&gt;</code> is more semantically correct).
+        name. Font Icons are designed to be used with inline elements (we like the <code>%i</code> tag for
+        brevity, but using a <code>%span</code> is more semantically correct).
       </p>
       <div class="alert alert-success">
             <i class="icon-info"></i>
@@ -857,7 +859,7 @@ Specific campaign dominant
       </div>
 </br> 
       <h4>Can't use span or i tag?</h4>
-      This works beautifully in most cases but what if you don't want to inject <code>&lt;i&gt;</code>/<code>&lt;span&gt;</code> or simply can't?  If you run into this case, you can still use font icons.  All you need to do is use the :before pseudo-element of the element you want to use and set its content and font-family:
+      This works beautifully in most cases but what if you don't want to inject <code>%i</code>/<code>%span</code> or simply can't?  If you run into this case, you can still use font icons.  All you need to do is use the :before pseudo-element of the element you want to use and set its content and font-family:
 
  <pre><code> div.github:before {
   content: "\f09b"; (see _font-icons.scss for specific icon content)
