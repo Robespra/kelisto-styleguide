@@ -301,7 +301,10 @@ body {
   content: "\e661";
 }
 
+.panel-default>.panel-heading {
+background-color: #f8f9fa;
 
+}
 
 
 #masthead {
