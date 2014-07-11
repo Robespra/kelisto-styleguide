@@ -327,7 +327,7 @@ body {
 }
 .nav-stacked{
   margin-top:3%;
-  background:#f1f1f1;
+  background:#f8f9fa;
   position:fixed;
   border-radius:.4em;
   border:1px solid #ddd;
@@ -412,7 +412,7 @@ a.current:hover{
   text-align: center;
 }
 .bgc1 {
-  background: #f1f1f1;
+  background:#f8f9fa;
 }
 .fgc1 {
   color: #999;
@@ -484,7 +484,7 @@ p {
 }
 .textbox0 {
   width: 3em;
-  background: #f1f1f1;
+  background: #f8f9fa;
   padding: .25em .5em;
   line-height: 1.5;
   height: 1.5em;
