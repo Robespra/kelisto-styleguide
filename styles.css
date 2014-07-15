@@ -78,6 +78,9 @@ body {
 .icon-settings:before {
   content: "\e611";
 }
+.icon-segurovida:before {
+  content: "\e612";
+}
 .icon-seguros:before {
   content: "\e613";
 }
@@ -123,7 +126,7 @@ body {
 .icon-noticias:before {
   content: "\e625";
 }
-.icon-telefonia-movil:before {
+.icon-icon-telefonia-movil:before {
   content: "\e626";
 }
 .icon-seguros-de-moto:before {
@@ -246,7 +249,7 @@ body {
 .icon-chat:before {
   content: "\e655";
 }
-.icon-adsl:before {
+.icon-icon-adsl:before {
   content: "\e657";
 }
 .icon-bookmark-percent:before {
@@ -305,7 +308,6 @@ body {
 background-color: #f8f9fa;
 
 }
-
 
 #masthead {
   min-height:150px;
