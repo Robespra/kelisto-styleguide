@@ -26,8 +26,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-seguros-de-vida:before {
+.icon-guides:before {
+  content: "\e612";
+}
+.icon-vida:before {
   content: "\e61b";
 }
 .icon-megaphone:before {
@@ -84,13 +86,13 @@ body {
 .icon-seguros:before {
   content: "\e613";
 }
-.icon-seguro-hogar:before {
+.icon-hogar:before {
   content: "\e614";
 }
 .icon-save:before {
   content: "\e615";
 }
-.icon-seguros-de-salud:before {
+.icon-salud:before {
   content: "\e616";
 }
 .icon-rss:before {
@@ -120,16 +122,16 @@ body {
 .icon-pen:before {
   content: "\e622";
 }
-.icon-packs:before {
+.icon-adsl:before {
   content: "\e624";
 }
 .icon-noticias:before {
   content: "\e625";
 }
-.icon-icon-telefonia-movil:before {
+.icon-movil:before {
   content: "\e626";
 }
-.icon-seguros-de-moto:before {
+.icon-moto:before {
   content: "\e627";
 }
 .icon-menu:before {
@@ -180,7 +182,7 @@ body {
 .icon-gas:before {
   content: "\e63c";
 }
-.icon-cuentas-bancarias:before {
+.icon-finanzas:before {
   content: "\e63d";
 }
 .icon-favorite:before {
@@ -297,7 +299,7 @@ body {
 .icon-CI-tercerosampliados:before {
   content: "\e667";
 }
-.icon-seguros-de-coche:before {
+.icon-auto:before {
   content: "\e65c";
 }
 .icon-arrow:before {
