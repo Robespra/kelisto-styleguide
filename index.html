@@ -398,6 +398,15 @@ Usability & User Experience Community</a>
                 <a href="http://www.pixlr.com" target="_blank">Pixlr</a> – Pixlr is like a free, online version of Photoshop.
               </br>
                 <a href="http://www.gimp.org/" target="_blank">Gimp</a> – A bit of a learning curve, but a free tool for image editing. 
+                   <div class="row">
+                  <div class="col-md-3">
+                          <p class="small">Click on the button to show the notification:</p>
+                    <button id="notification-trigger" class="progress-button">
+                      <span class="content">Show Notification</span>
+                      <span class="progress"></span>
+                    </button>
+                  </div>
+                  </div>
             
                       
                 <hr>
@@ -1985,6 +1994,43 @@ $('li a.current').removeClass('current');
 $(this).addClass('current');
 });
 </script>
+
+<script src="js/notificationFx.js"></script>
+    <script>
+      (function() {
+        var bttn = document.getElementById( 'notification-trigger' );
+
+        // make sure..
+        bttn.disabled = false;
+        
+        bttn.addEventListener( 'click', function() {
+          // simulate loading (for demo purposes only)
+          classie.add( bttn, 'active' );
+          setTimeout( function() {
+
+            classie.remove( bttn, 'active' );
+            
+            // create the notification
+            var notification = new NotificationFx({
+              message : '<p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>',
+              layout : 'growl',
+              effect : 'scale',
+              type : 'notice', // notice, warning, error or success
+              onClose : function() {
+                bttn.disabled = false;
+              }
+            });
+
+            // show the notification
+            notification.show();
+
+          }, 1200 );
+          
+          // disable the button (for demo purposes only)
+          this.disabled = true;
+        } );
+      })();
+    </script>
 
   </body>
 </html>
