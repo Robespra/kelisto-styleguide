@@ -26,6 +26,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-creditcard:before {
+  content: "\e623";
+}
 .icon-guides:before {
   content: "\e612";
 }
