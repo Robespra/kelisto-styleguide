@@ -26,6 +26,34 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-wallet:before {
+  content: "\e629";
+}
+.icon-moneycard:before {
+  content: "\e62a";
+}
+.icon-prestamosinterpersona:before {
+  content: "\e64d";
+}
+.icon-PrestamosRapidos:before {
+  content: "\e652";
+}
+.icon-prestamos:before {
+  content: "\e656";
+}
+.icon-microprestamos:before {
+  content: "\e65d";
+}
+.icon-nomina:before {
+  content: "\e65e";
+}
+.icon-debitcard:before {
+  content: "\e65f";
+}
+.icon-fidelitycard:before {
+  content: "\e666";
+}
 .icon-empresas:before {
   content: "\e628";
 }
@@ -33,7 +61,7 @@ body {
   content: "\e623";
 }
 .icon-guides:before {
-  content: "\e612";
+  content: "\e61c";
 }
 .icon-vida:before {
   content: "\e61b";
@@ -92,7 +120,7 @@ body {
 .icon-seguros:before {
   content: "\e613";
 }
-.icon-hogar:before {
+.icon-seguro-hogar:before {
   content: "\e614";
 }
 .icon-save:before {
@@ -128,7 +156,7 @@ body {
 .icon-pen:before {
   content: "\e622";
 }
-.icon-adsl:before {
+.icon-packs:before {
   content: "\e624";
 }
 .icon-noticias:before {
@@ -164,7 +192,7 @@ body {
 .icon-icon-pdf:before {
   content: "\e634";
 }
-.icon-seguros-de-hogar:before {
+.icon-hogar:before {
   content: "\e635";
 }
 .icon-hipotecas:before {
@@ -257,7 +285,7 @@ body {
 .icon-chat:before {
   content: "\e655";
 }
-.icon-icon-adsl:before {
+.icon-broadband:before {
   content: "\e657";
 }
 .icon-bookmark-percent:before {
@@ -311,6 +339,7 @@ body {
 .icon-arrow:before {
   content: "\e661";
 }
+
 
 .panel-default>.panel-heading {
 background-color: #f8f9fa;
