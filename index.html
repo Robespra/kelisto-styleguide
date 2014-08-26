@@ -391,7 +391,30 @@ Usability & User Experience Community</a>
                   </div>
                 <hr>
                 <h2 id="sec4">Banners / illustrations</h2>
-                (soon)
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="img/banner-burbujainmo.jpg" class="img-responsive img-thumbnail img-left" width='350' height='261'>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img/banner-campaign.jpg" class="img-responsive img-thumbnail img-right" width='350' height='261'>
+                  </div>
+                </div>
+                </br>
+                <div class="col-md-12">
+                 <div class="alert alert-success">
+                  <i class="icon-info"></i>
+                  We <strong>DO</strong> like clean, clear and easily scalable vector illustrations.
+                  </br><strong>ALL</strong> illustrations must be done using our palette (see bellow).
+                  </div>  
+                </div> 
+
+                <div class="col-md-12">
+                 <div class="alert alert-danger">
+                  <i class="icon-info"></i>
+                  We <strong>DON'T</strong> like messy illustration or obvious stock image.
+                  </div>  
+                </div> 
+                <h4>Palette for illustration</h4>
                 <h4>Alternatives to paint</h4>
                 <a href="http://www.pixlr.com" target="_blank">Pixlr</a> – Pixlr is like a free, online version of Photoshop.
               </br>
@@ -401,7 +424,7 @@ Usability & User Experience Community</a>
                 <h3>Notifications / banners for new content or feature</h3>
                 <h4>Click on the button to show the notification:</h4>
                 <button id="notification-trigger-growl-scale" class="progress-button">
-                  <span class="content">Growl-Scale</span>
+                  <span class="content">Feature focus</span>
                   <span class="progress"></span>
                 </button>
 
@@ -2143,7 +2166,48 @@ Specific campaign dominant
               (soon)
               <hr class="col-md-12">
               <h2 id="sec7">Forms</h2>
-              (soon)
+              <label>
+                <input type="checkbox">Confirmo que he leído y acepto la
+                <a href: "http://www.kelisto.es/terminos-de-uso", target: '_blank'> política de privacidad</a>
+              </label>
+
+              <pre>
+                input[type="radio"], input[type="checkbox"] {
+                  -webkit-appearance: none;
+                  position: relative;
+                  border-radius: 3em;
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin: -0.3em 0.25em 0 0;
+                  padding: 0;
+                  width: 1.3em;
+                  height: 1.3em;
+                  background: white;
+                  border-radius: 50%;
+                  font-size: 0.9em;
+                  cursor: pointer;
+                  box-shadow: inset 0 1px 1px #999999;
+                  -webkit-transition: box-shadow 200ms, border-color 200ms, background 300ms;
+                  -moz-transition: box-shadow 200ms, border-color 200ms, background 300ms;
+                  transition: box-shadow 200ms, border-color 200ms, background 300ms;
+                  &:hover{
+                    border:solid 2px $blue;
+                  }
+                  &:checked{
+                    background: $blue;
+                    box-shadow: inset 0 1px 3px #666666, inset 0 0 0 0.4em white;
+                  }
+                  &:checked:hover{
+                    box-shadow: inset 0 1px 0px $blue, inset 0 0 0 0.3em white, 0 0 1px 3px $blue;
+                    border:solid 1px $blue;
+                  }
+                  &:checked:active{
+                    background: $blue;
+                    border:solid 1px $blue;
+                    box-shadow:none;
+                  }
+                }
+              </pre>
               <hr class="col-md-12">
               <h2 id="sec8">Mediaqueries</h2>
               (soon)
@@ -2182,7 +2246,7 @@ $(this).addClass('current');
             
             // create the notification
             var notification = new NotificationFx({
-              message : '<p>This is just a simple notice. Everything is in order and this is a <a href="#">simple link</a>.</p>',
+              message : '<p>This is just a simple notice for a new feature. And this is a <a href="#">simple link</a>.</p>',
               layout : 'growl',
               effect : 'scale',
               type : 'notice', // notice, warning, error or success
@@ -2217,7 +2281,7 @@ $(this).addClass('current');
             
             // create the notification
             var notification = new NotificationFx({
-              message : '<p>This notification has slight elasticity to it thanks to <a href="http://bouncejs.com/">bounce.js</a>.</p>',
+              message : '<p>This notification can be use to catch attention on new content/feature/offer. It has slight elasticity to it thanks to <a href="http://bouncejs.com/">bounce.js</a>.</p>',
               layout : 'growl',
               effect : 'slide',
               type : 'notice', // notice, warning or error
@@ -2287,7 +2351,7 @@ $(this).addClass('current');
             
             // create the notification
             var notification = new NotificationFx({
-              message : '<span class="icon icon-megaphone"></span><p>You have some interesting news in your inbox. Go <a href="#">check it out</a> now.</p>',
+              message : '<span class="icon icon-kelisto-circle"></span><p>We have some interesting news/features/offer for you. Go <a href="#">check it out</a> now.</p>',
               layout : 'bar',
               effect : 'slidetop',
               type : 'notice', // notice, warning or error
@@ -2322,7 +2386,7 @@ $(this).addClass('current');
             
             // create the notification
             var notification = new NotificationFx({
-              message : '<span class="icon icon-megaphone"></span><p>You have some interesting news in your inbox. Go <a href="#">check it out</a> now.</p>',
+              message : '<span class="icon icon-kelisto-circle"></span><p>We have some interesting news/features/offer for you. Go <a href="#">check it out</a> now.</p>',
               layout : 'bar-bottom',
               effect : 'slidebottom',
               type : 'notice', // notice, warning or error

@@ -558,7 +558,7 @@ p {
   margin:.5em .5em .5em 0;
   outline: none;
   border: none;
-  color: #fff;
+  color: #864587;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
@@ -567,7 +567,8 @@ p {
   line-height: 4;
   overflow: hidden;
   border-radius: 5px;
-  background: #864587;
+  background: #f8f9fa;
+  border:solid 1px #ccccc8;
 }
 .progress-button:hover {
   opacity:0.9;
@@ -586,7 +587,7 @@ p {
 .progress-button .progress {
   position: absolute;
   left: 0;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.1);
   top: 0;
   width: 0%;
   opacity: 0;
@@ -902,7 +903,7 @@ p {
 .ns-effect-slidetop .icon {
   position: absolute;
   display: block;
-  font-size: 179%;
+  font-size: 300%;
   top: 50%;
   left: 1em;
   -webkit-transform: translate3d(0,-50%,0);
@@ -910,9 +911,14 @@ p {
 }
 
 .ns-effect-slidetop p {
-  padding: 0 3.2em;
+  padding: 0 5.2em;
   font-size: 1.2em;
   display: inline-block;
+}
+
+.ns-effect-slidetop a{
+  text-decoration:underline;
+  color:#fff;
 }
 
 .ns-effect-slidetop .ns-close::before,
@@ -980,7 +986,7 @@ p {
 .ns-effect-slidebottom .icon {
   position: absolute;
   display: block;
-  font-size: 179%;
+  font-size: 300%;
   top: 50%;
   left: 1em;
   -webkit-transform: translate3d(0,-50%,0);
@@ -988,11 +994,14 @@ p {
 }
 
 .ns-effect-slidebottom p {
-  padding: 0 3.2em;
+  padding: 0 5.2em;
   font-size: 1.2em;
   display: inline-block;
 }
-
+.ns-effect-slidebottom a{
+  text-decoration:underline;
+  color:#fff;
+}
 .ns-effect-slidebottom .ns-close::before,
 .ns-effect-slidebottom .ns-close::after {
   width: 2px;
@@ -1076,8 +1085,21 @@ p {
 
 /* Scale */
 .ns-effect-scale {
-  background: rgba(0, 157, 224, 0.88);
-  box-shadow: 0 25px 10px -15px rgba(0,0,0,0.05);
+  background: inset 4.5em 0 rgba(0, 157, 224, 0.88);
+}
+
+.ns-effect-scale:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 15px 15px;
+border-color: rgba(0, 157, 224, 0.58) transparent;
+display: block;
+width: 0;
+z-index: 1;
+top: -15px;
+left: 130px;
 }
 
 .ns-effect-scale a {
@@ -1122,7 +1144,7 @@ p {
 
 /* Slide */
 .ns-effect-slide {
-  background: rgba(0, 157, 224, 0.88);
+  background: inset 4.5em 0 rgba(0, 157, 224, 0.88);
   color:#fff;
   top: auto;
   bottom: 30px;
@@ -1330,9 +1352,72 @@ p {
   animation-direction: reverse;
 }
 
-
-
-
 /* ANIMATIONS NOTIFICATION ENDS HERE */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FORMS */
+label {
+  cursor:pointer;
+}
+input[type="radio"], input[type="checkbox"] {
+-webkit-appearance: none;
+position: relative;
+border-radius: 3em;
+display: inline-block;
+vertical-align: middle;
+margin: -0.3em 0.25em 0 0;
+padding: 0;
+width: 1.3em;
+height: 1.3em;
+background: white;
+border-radius: 50%;
+font-size: 0.9em;
+cursor: pointer;
+box-shadow: inset 0 1px 1px #999999;
+-webkit-transition: box-shadow 200ms, border-color 200ms, background 300ms;
+-moz-transition: box-shadow 200ms, border-color 200ms, background 300ms;
+transition: box-shadow 200ms, border-color 200ms, background 300ms;
+}
+input[type="radio"]:hover, input[type="checkbox"]:hover{
+  border:solid 2px #009de0;
+}
+input[type="radio"]:checked, input[type="checkbox"]:checked {
+  background: #009de0;
+  box-shadow: inset 0 1px 3px #666666, inset 0 0 0 0.4em white;
+}
+input[type="radio"]:checked:checked:hover, input[type="checkbox"]:checked:hover{
+  box-shadow: inset 0 1px 0px $blue, inset 0 0 0 0.3em white, 0 0 1px 3px #009de0;
+  border:solid 1px #009de0;
+}
+input[type="radio"]:checked:active, input[type="checkbox"]:checked:active{
+  background: #009de0;
+  border:solid 1px #009de0;
+  box-shadow:none;
+}
+}
 
