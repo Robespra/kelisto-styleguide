@@ -348,7 +348,14 @@ body {
   content: "\e661";
 }
 
+a{
+  color:#009de0;
 
+}
+
+a:hover{
+  text-decoration:underline;
+}
 .panel-default>.panel-heading {
 background-color: #f8f9fa;
 
@@ -417,9 +424,10 @@ font-size: 1.3em;
 }
 .nav>li>a:hover{
   background:#fff;
+  color:#864587;
 }
 .current{
-  color:#5b4e60;
+  color:#864587;
   background:#fff;
 }
 a.current:hover{
@@ -1429,3 +1437,73 @@ input[type="radio"]:checked:active, input[type="checkbox"]:checked:active{
 }
 }
 
+
+
+
+.has-tip {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  -webkit-transform: translateZ(0);
+  font-size: 1.2em;
+  text-align: center;
+  cursor:pointer;
+}
+
+.tooltip {
+  background: rgba(0, 157, 224, 0.88);
+  bottom: 100%;
+  border-radius:2px;
+  color: #fff;
+  display: block;
+  left: 0px;
+  width: 240px;
+  right: 0;
+  margin: auto;
+  margin-top: 15px;
+  opacity: 0;
+  padding: 15px;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px); // IE9
+          transform: translateY(10px);
+  -webkit-transition: all .25s ease-out;
+          transition: all .25s ease-out;
+}
+.tooltip::after {
+  border: transparent solid 10px;
+  border-top-color:rgba(0, 157, 224, 0.88);
+  content: '';
+  left: 51px; margin-right: 80%;
+  margin: auto;
+  position: absolute;
+  top: 100%;
+  width: 0;
+}
+.has-tip .tooltip:before {
+  bottom: -20px;
+  content: '';
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+} 
+  
+.has-tip:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px); // IE9
+          transform: translateY(0px);
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .has-tip .tooltip {
+  display: none;
+}
+
+.lte8 .has-tip:hover .tooltip {
+  display: block;
+}

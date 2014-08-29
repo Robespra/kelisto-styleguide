@@ -46,13 +46,17 @@
                 <ul class="nav nav-stacked" id="sidebar">
                   <li><a href="#sec0" class="current">Introduction</a></li>
                   <li><a href="#sec1">Logo / collaterals</a></li>
-                  <li><a href="#sec4">Banners / illustrations</a></li>
+                  <li class="has-tip"><a href="#sec4">Promotion</a>
+                    <div class="tooltip">Banners, notifications, illustrations...</div>
+                  </li>
+
+              
                   <li><a href="#sec2">Colors</a></li>
                   <li><a href="#sec3">Typography</a></li>
                   <li><a href="#sec5">Icons</a></li>
                   <li><a href="#sec6">Buttons</a></li>
-                  <li><a href="#sec6">Forms</a></li>
-                  <li><a href="#sec6">Mediaqueries</a></li>
+                  <li><a href="#sec7">Forms</a></li>
+                  <li><a href="#sec8">Mediaqueries</a></li>
                 </ul>
               
           </div>  
@@ -116,8 +120,10 @@ Usability & User Experience Community</a>
   <li>Keep it simple</li>
 </ul>
 More UX/UI design resources : <a href="Pixel_Perfect_Perfection.pdf" target="_blank">Pixel_Perfect_Perfection.pdf</a>, <a href="http://www.google.com/design/spec/material-design/introduction.html" target="_blank">Google Material Design</a>, <a href="UX_therms_glossary.pdf" target="_blank">UX_therms_glossary.pdf (liquid design ?)</a>
-<h3>Front-end guide</h3>
-<a href="https://github.com/kelkoo-services/kelisto/wiki/Front-end-guide" target="_blank">Front-end-guide</a>
+<h4>Free alternatives to Paint</h4>
+                <a href="http://www.pixlr.com" target="_blank">Pixlr</a> – Pixlr is like a free, online version of Photoshop.
+              </br>
+                <a href="http://www.gimp.org/" target="_blank">Gimp</a> – A bit of a learning curve, but a free tool for image editing. 
 
               
                 <hr class="col-md-12">
@@ -422,7 +428,8 @@ More UX/UI design resources : <a href="Pixel_Perfect_Perfection.pdf" target="_bl
                   
                   </div>
                 <hr>
-                <h2 id="sec4">Banners / illustrations</h2>
+                <h2 id="sec4">Promotion</h2>
+                 <h3>Banners and illustrations</h3>
                 <div class="row">
                   <div class="col-md-6">
                     <img src="img/banner-burbujainmo.jpg" class="img-responsive img-thumbnail img-left" width='350' height='261'>
@@ -447,17 +454,12 @@ More UX/UI design resources : <a href="Pixel_Perfect_Perfection.pdf" target="_bl
                   We <strong>DON'T</strong> like messy illustrations or basic stock images.
                   </div>  
                 </div> 
-                <h4>Palette for illustration</h4>
+                <h4>Palette for illustrations</h4>
                 <img src="img/palette-illustrations.jpg" class="img-responsive img-thumbnail img-left">
-  
-                <h4>Alternatives to paint</h4>
-                <a href="http://www.pixlr.com" target="_blank">Pixlr</a> – Pixlr is like a free, online version of Photoshop.
-              </br>
-                <a href="http://www.gimp.org/" target="_blank">Gimp</a> – A bit of a learning curve, but a free tool for image editing. 
           
                 
-                <h3>Notifications / banners for new content or feature</h3>
-                <h4>Click on the button to show the notification:</h4>
+                <h3>Responsive notifications for new content or feature</h3>
+                <h4>Alternative to banners. Click on the button to show the notification:</h4>
                 <button id="notification-trigger-growl-scale" class="progress-button">
                   <span class="content">Feature focus</span>
                   <span class="progress"></span>
@@ -2232,6 +2234,7 @@ Specific campaign dominant
               (soon)
               <hr class="col-md-12">
               <h2 id="sec7">Forms</h2>
+              <h3>Checkboxes</h3>
               <label>
                 <input type="checkbox">Confirmo que he leído y acepto la
                 <a href: "http://www.kelisto.es/terminos-de-uso", target: '_blank'> política de privacidad</a>
@@ -2276,7 +2279,54 @@ Specific campaign dominant
               </pre>
               <hr class="col-md-12">
               <h2 id="sec8">Mediaqueries</h2>
-              Please check the <a href="https://github.com/kelkoo-services/kelisto/wiki/Front-end-guide" target="_blank">Front-end-guide</a>
+              We start designing common style and then we add the mediaqueries
+              <pre>
+              .main-content{
+                 //Mobile first style!
+                 width: 100%;
+                 position: relative;
+
+                 //2nd add changes to all devices bigger than "mobile-landscape"
+                 @include mobile-landscape-and-up{
+                   width:90%;
+                 }
+                 @include tablet-landscape-and-up{
+                   width:50%;
+                 }
+                 //Now define .main-content's children
+                 .news{
+                  }
+                 .call-to-action{
+                 }
+              }
+              </pre>
+              Please check the <a href="https://github.com/kelkoo-services/kelisto/wiki/Front-end-guide" target="_blank">Front-end-guide</a> for good practices
+              <h3>Available mediaqueries</h3>
+              <pre>
+              @mixin mobile-portrait-and-up {
+                  // content here
+                }
+
+              @mixin mobile-landscape-and-up {
+                // content here
+              }
+
+
+              @mixin tablet-portrait-and-up {
+                // content here
+              }
+
+              // Everything larger than portrait tablet
+              @mixin tablet-landscape-and-up {
+                // content here
+              }
+
+              // Everything larger than a landscape tablet
+              @mixin desktop-and-up {
+                // content here
+              }
+</pre>
+              Please check the <a href="https://github.com/kelkoo-services/kelisto/wiki/Front-end-guide" target="_blank">Front-end-guide</a> for good practices
                 <hr>
               <h4><a href="http://www.kelisto.es">Kelisto.es</a></h4>
                 <hr>
