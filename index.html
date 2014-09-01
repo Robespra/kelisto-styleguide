@@ -451,7 +451,7 @@ More UX/UI design resources : <a href="Pixel_Perfect_Perfection.pdf" target="_bl
                 <div class="col-md-12">
                  <div class="alert alert-danger">
                   <i class="icon-info"></i>
-                  We <strong>DON'T</strong> like messy illustrations or basic stock images.
+                  We <strong>DON'T</strong> like messy / off-palette illustrations or basic stock images.
                   </div>  
                 </div> 
                 <h4>Palette for illustrations</h4>
@@ -459,7 +459,8 @@ More UX/UI design resources : <a href="Pixel_Perfect_Perfection.pdf" target="_bl
           
                 
                 <h3>Responsive notifications for new content or feature</h3>
-                <h4>Alternative to banners. Click on the button to show the notification:</h4>
+                <h4>Alternative to banners. </h4>
+                <h5>Click on the button to show the notification:</h5>
                 <button id="notification-trigger-growl-scale" class="progress-button">
                   <span class="content">Feature focus</span>
                   <span class="progress"></span>
@@ -960,7 +961,8 @@ Specific campaign dominant
                 </div>
                 
               
-             
+              <h4>Palette for illustrations</h4>
+                <img src="img/palette-illustrations.jpg" class="img-responsive img-thumbnail img-left">
                 <hr class="col-md-12">
                 <h2 id="sec3">Typography</h2>
           <h4>Current fonts<h4/>
@@ -2235,11 +2237,21 @@ Specific campaign dominant
               <hr class="col-md-12">
               <h2 id="sec7">Forms</h2>
               <h3>Checkboxes</h3>
+
               <label>
                 <input type="checkbox">Confirmo que he leído y acepto la
                 <a href: "http://www.kelisto.es/terminos-de-uso", target: '_blank'> política de privacidad</a>
               </label>
-
+              <h4>Haml</h4>
+                      <pre>
+                      %label{for: "subscriber_accept_terms"}
+                        = check_box :subscriber, :accept_terms
+                        %span
+                          Confirmo que he leído y acepto la
+                        = link_to "política de privacidad", "#{kelisto_root_url}politica-de-privacidad"
+ 
+                      </pre>
+              <h4>Scss</h4>
               <pre>
                 input[type="radio"], input[type="checkbox"] {
                   -webkit-appearance: none;
@@ -2259,6 +2271,10 @@ Specific campaign dominant
                   -webkit-transition: box-shadow 200ms, border-color 200ms, background 300ms;
                   -moz-transition: box-shadow 200ms, border-color 200ms, background 300ms;
                   transition: box-shadow 200ms, border-color 200ms, background 300ms;
+
+                  &:focus {
+                    outline: none;
+                  }
                   &:hover{
                     border:solid 2px $blue;
                   }

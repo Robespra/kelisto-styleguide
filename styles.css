@@ -2,6 +2,7 @@ body {
   font-family:'Open Sans';
 }
 
+*:focus { outline: none; }
 @font-face {
   font-family: 'general';
   src:url('fonts/general.eot?uy5qrt');
